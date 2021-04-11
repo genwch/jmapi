@@ -1,0 +1,9 @@
+# exclude everything except directory foo/bar
+/.*venv
+/.vscode
+/.env
+/*.egg-info
+/build
+/dist
+__pycache__
+/bk/*

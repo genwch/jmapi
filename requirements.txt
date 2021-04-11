@@ -4,3 +4,4 @@ python-jose
 pddb-genwch>=0.0.5
 uvicorn
 python-multipart
+scikit-learn==0.24.0

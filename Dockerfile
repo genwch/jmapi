@@ -11,6 +11,8 @@ EXPOSE $PY_PORT
 COPY ./requirements.txt $WORKDIR
 RUN pip install -r requirements.txt
 ADD ./$FLASK_APP $WORKDIR/$FLASK_APP
+ADD ./models $WORKDIR/models
+ADD ./jobcat $WORKDIR/jobcat
 RUN /bin/echo -e "#!/bin/bash\nuvicorn $FLASK_APP:app --host=$PY_HOST --port=$PY_PORT" > /exec
 RUN chmod a+x /exec
 

@@ -1,6 +1,6 @@
 fastapi
 fastapi_pagination
-jose
+python-jose
 pddb-genwch>=0.0.5
 uvicorn
 python-multipart

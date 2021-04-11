@@ -4,3 +4,4 @@ jose
 FLASK_APP
 pddb-genwch>=0.0.5
 uvicorn
+python-multipart

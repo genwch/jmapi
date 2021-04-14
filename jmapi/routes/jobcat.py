@@ -22,8 +22,10 @@ def restore_model(name):
 async def get_job_cat(job_desc: mod.JobDesc):
     pred = ""
     model, data, target, score = restore_model("model2")
-    job_desc = data.get("job_desc", "")
-    for p in model.predict([job_desc]):
+    jobdesc=job_desc.job_desc
+    # job_desc = dt.get("job_desc", "")
+    # print(data, target, score, job_desc)
+    for p in model.predict([jobdesc]):
         pred = p
         break
     # print(model, data, target, score)
